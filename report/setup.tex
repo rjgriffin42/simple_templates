@@ -1,0 +1,28 @@
+\documentclass[10pt]{report}
+
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+%allows the user to define a margin argument, for adjusting margins
+\ifx\margin\undefined
+\usepackage{geometry}
+\else
+\usepackage[margin=\margin]{geometry}
+\fi
+
+\title{\mytitle}
+\author{\myauthor}
+
+\begin{document}
+
+\maketitle
+
+%If an abstract has been defined, add it to the paper.
+\ifx\myabstract\undefined
+\else
+\begin{abstract}
+\myabstract
+\end{abstract}
+\fi
