@@ -4,7 +4,13 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
-\usepackage[square, numbers]{natbib}
+\usepackage{apalike}     %for references
+\let\bibhang\relax       %fixes warning/error for natbib redefining bibhang
+\usepackage[backend=biber, natbib=true, style=numeric, url=false]{biblatex}
+
+\AtEveryBibitem{\clearfield{issn}}
+
+\addbibresource{\biblio}
 
 \ifx\margin\undefined
 \usepackage{geometry}
