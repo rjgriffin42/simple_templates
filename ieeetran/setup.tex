@@ -7,6 +7,7 @@
 \usepackage{apalike}     %for references
 \let\bibhang\relax       %fixes warning/error for natbib redefining bibhang
 \usepackage[backend=biber, natbib=true, style=numeric, url=false]{biblatex}
+\usepackage{caption}
 
 \AtEveryBibitem{\clearfield{issn}}
 
@@ -30,7 +31,6 @@
 \begin{document}
 
 \maketitle
-
 \ifx\myabstract\undefined
 \else
 \begin{abstract}
