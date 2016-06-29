@@ -11,7 +11,8 @@
 
 \AtEveryBibitem{\clearfield{issn}}
 
-\addbibresource{\biblio}
+\renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
+\bibliocommand
 
 \ifx\margin\undefined
 \usepackage{geometry}
