@@ -1,3 +1,4 @@
+\IfFileExists{./metadata.tex}{\input{./metadata.tex}}{}
 \documentclass[10pt,conference,onecolumn]{IEEEtran}
 
 \usepackage{graphics}
@@ -5,14 +6,22 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{apalike}     %for references
+
+\ifx\bibliocommand\undefined
+\else
 \let\bibhang\relax       %fixes warning/error for natbib redefining bibhang
-\usepackage[backend=biber, natbib=true, style=numeric, url=false]{biblatex}
-\usepackage{caption}
-
+\usepackage[
+    backend=biber,
+    natbib=true,
+    style=numeric,
+    url=false
+]{biblatex}
 \AtEveryBibitem{\clearfield{issn}}
-
 \renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
 \bibliocommand
+\fi
+
+\usepackage{caption}
 
 \ifx\margin\undefined
 \usepackage{geometry}

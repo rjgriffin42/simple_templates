@@ -1,9 +1,23 @@
+\IfFileExists{./metadata.tex}{\input{./metadata.tex}}{}
 \documentclass[10pt]{report}
 
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
+
+%Correctly reacting to definition of bibliography to optionally enable biber
+\ifx\bibliocommand\undefined
+\else
+\usepackage[
+    backend=biber,
+    natbib=true,
+    sorting=none
+]{biblatex}
+\renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
+\bibliocommand
+\fi
+
 
 %allows the user to define a margin argument, for adjusting margins
 \ifx\margin\undefined
