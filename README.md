@@ -1,14 +1,14 @@
 # Simple Templates
 
-This repository contains a few example templates to use with the [papers base](https://github.com/jasedit/papers_base) system, which provides a system by which LaTeX templates can be integrated in a MultiMarkdown workflow for writing academic papers more easily.
+This repository contains a few example templates to use with [scriptorium](https://github.com/jasedit/scriptorium), which provides a system by which LaTeX templates can be integrated in a MultiMarkdown workflow for writing academic papers more easily.
 
 # Installation
 
-Clone this repository into the templates directory of papers_base:
+Clone this repository into the templates directory of scriptorium:
 
 ```
 cd papers_base/templates/
-git clone git@github.com:jasedit/simple_templates.git
+git clone https://github.com/jasedit/simple_templates.git
 ```
 
 # Usage
