@@ -36,16 +36,8 @@
 
 % If myabstract is defined, use it
 \ifx\myabstract\undefined
-
-% If abstract is defined, attempt to include it
-\ifx\abstract\undefined
 \else
 \begin{abstract}
-\input{\abstract}
-\end{abstract}
-\fi
-\else
-\begin{abstract}
-\myabstract
+\input{\myabstract}
 \end{abstract}
 \fi
