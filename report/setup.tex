@@ -34,8 +34,16 @@
 
 \maketitle
 
-%If an abstract has been defined, add it to the paper.
+% If myabstract is defined, use it
 \ifx\myabstract\undefined
+
+% If abstract is defined, attempt to include it
+\ifx\abstract\undefined
+\else
+\begin{abstract}
+\input{\abstract}
+\end{abstract}
+\fi
 \else
 \begin{abstract}
 \myabstract
