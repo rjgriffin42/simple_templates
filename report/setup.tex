@@ -19,13 +19,15 @@
 \bibliocommand
 \fi
 
-
 %allows the user to define a margin argument, for adjusting margins
 \ifx\margin\undefined
 \usepackage{geometry}
 \else
 \usepackage[margin=\margin]{geometry}
 \fi
+
+\renewcommand\[{\begin{equation}}
+\renewcommand\]{\end{equation}}
 
 \title{\mytitle}
 \author{\myauthor}
