@@ -18,6 +18,5 @@ These variables are generally not exposed by MMD frontmatter, since the variable
 latex input: metadata.tex
 ```
 
-1. `myabstract` - if this LaTeX variable is defined, the variable will be inserted as the abstract for the paper. This overrides the `abstract` variable
-2. `abstract`, `$ABSTRACT` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
-3. `margin` - if defined, sets the margin argument for the [geometry package](http://www.ctan.org/tex-archive/macros/latex/contrib/geometry)
+1. `myabstract` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
+2. `margin` - if defined, sets the margin argument for the [geometry package](http://www.ctan.org/tex-archive/macros/latex/contrib/geometry)
