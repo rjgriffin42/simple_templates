@@ -7,6 +7,11 @@
 \usepackage{tabulary}
 \usepackage{booktabs}
 
+\ifx\mypackages\undefined
+\else
+\input{\mypackages}
+\fi
+
 %Correctly reacting to definition of bibliography to optionally enable biber
 \ifx\bibliocommand\undefined
 \else
