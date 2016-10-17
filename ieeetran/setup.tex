@@ -1,4 +1,12 @@
-\documentclass[10pt,conference,onecolumn]{IEEEtran}
+\ifx\mydocclass\undefined
+\def\mydocclass{conference}
+\fi
+
+\ifx\mycolumns\undefined
+\def\mycolumns{onecolumn}
+\fi
+
+\documentclass[10pt,\mydocclass,\mycolumns]{IEEEtran}
 
 \usepackage{graphics}
 \usepackage{graphicx}
