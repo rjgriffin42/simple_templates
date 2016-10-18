@@ -10,6 +10,10 @@ Variables have two potential configuration points, which will be described here.
 1. `latex author`,`$AUTHOR` - name of the paper author
 2. `latex title`, `$TITLE` - title of the document
 3. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
+4. `my packages` - if defined, inserts the given file contents in the document preamble, allowing for customizing the set of packages in use.
+5. `my columns` - defines the number of columns for the document to use, defaulting to `onecolumn` if undefined.
+6. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
+7. `my keywords` - keywords for this document
 
 ## LaTeX Variables
 
