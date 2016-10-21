@@ -23,14 +23,14 @@
     backend=biber,
     natbib=true,
     style=ieee,
-    url=false
+    url=false,
+    doi=false,
+    isbn=false
 ]{biblatex}
 \AtEveryBibitem{\clearfield{issn}}
 \renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
 \bibliocommand
 \fi
-
-\usepackage{caption}
 
 \ifx\margin\undefined
 \usepackage{geometry}
@@ -40,9 +40,6 @@
 
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
-\ifdefined\autoref
-\renewcommand\autoref{\ref}
-\fi
 
 \ifdefined\mypackages
 \input{\mypackages}
