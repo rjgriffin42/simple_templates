@@ -1,3 +1,4 @@
+
 \ifx\mydocclass\undefined
 \def\mydocclass{conference}
 \fi
@@ -12,13 +13,15 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
-\usepackage{apalike}     %for references
+%for references
+\usepackage{apalike}
 \usepackage{tabulary}
 \usepackage{booktabs}
 
 \ifx\bibliocommand\undefined
 \else
-\let\bibhang\relax       %fixes warning/error for natbib redefining bibhang
+%fixes warning/error for natbib redefining bibhang
+\let\bibhang\relax
 \usepackage[
     backend=biber,
     natbib=true,
