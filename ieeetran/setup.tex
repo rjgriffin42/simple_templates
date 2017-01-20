@@ -8,6 +8,7 @@
 \fi
 
 \documentclass[10pt,\mydocclass,\mycolumns]{IEEEtran}
+\IEEEoverridecommandlockouts
 
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -49,7 +50,12 @@
 \fi
 
 \title{\mytitle}
-\author{\myauthor}
+
+\ifx\myassociation\undefined
+\author{\IEEEauthorblockN{\myauthor}}
+\else
+\author{\IEEEauthorblockN{\myauthor} \IEEEauthorblockA{\myassociation}}
+\fi
 
 \begin{document}
 
