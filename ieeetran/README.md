@@ -14,6 +14,8 @@ Variables have two potential configuration points, which will be described here.
 5. `my columns` - defines the number of columns for the document to use, defaulting to `onecolumn` if undefined.
 6. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
 7. `my keywords` - keywords for this document
+8. `my abstract` - `$ABSTRACT` - location of the abstract file
+9. `myacknowledgments` - `$MYACKNOWLEDGMENTS` - if included, the location of the acknowledgments file
 
 ## LaTeX Variables
 
