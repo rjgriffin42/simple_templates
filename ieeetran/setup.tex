@@ -35,6 +35,10 @@
 \bibliocommand
 \fi
 
+\ifdefined\mypackages
+\input{\mypackages}
+\fi
+
 \ifx\margin\undefined
 \usepackage{geometry}
 \else
@@ -44,9 +48,6 @@
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
 
-\ifdefined\mypackages
-\input{\mypackages}
-\fi
 
 \title{\mytitle}
 \author{\myauthor}
