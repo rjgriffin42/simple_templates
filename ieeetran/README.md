@@ -15,6 +15,8 @@ Variables have two potential configuration points, which will be described here.
 6. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
 7. `my keywords` - keywords for this document
 8. `myassociation`,`$ASSOCIATION` - if included, association of the paper author
+9. `my abstract` - `$ABSTRACT` - location of the abstract file
+10. `myacknowledgments` - `$MYACKNOWLEDGMENTS` - if included, the location of the acknowledgments file
 
 ## LaTeX Variables
 

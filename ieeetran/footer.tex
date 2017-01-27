@@ -4,3 +4,11 @@
 \else
 \printbibliography
 \fi
+
+\ifx\myacknowledgments\undefined
+\else
+
+\section*{Acknowledgments}
+\input{\myacknowledgments}
+
+\fi
