@@ -7,6 +7,19 @@
 \def\mycolumns{onecolumn}
 \fi
 
+\ifdefined\myinnermargin
+\newcommand{\CLASSINPUTinnersidemargin}{\myinnermargin}
+\fi
+\ifdefined\myoutermargin
+\newcommand{\CLASSINPUToutersidemargin}{\myoutermargin}
+\fi
+\ifdefined\mytopmargin
+\newcommand{\CLASSINPUTtoptextmargin}{\mytopmargin}
+\fi
+\ifdefined\mybottommargin
+\newcommand{\CLASSINPUTbottomtextmargin}{\mybottommargin}
+\fi
+
 \documentclass[10pt,\mydocclass,\mycolumns]{IEEEtran}
 \IEEEoverridecommandlockouts
 
@@ -40,15 +53,8 @@
 \input{\mypackages}
 \fi
 
-\ifx\margin\undefined
-\usepackage{geometry}
-\else
-\usepackage[margin=\margin]{geometry}
-\fi
-
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
-
 
 \title{\mytitle}
 

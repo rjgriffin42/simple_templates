@@ -7,23 +7,21 @@ Template using the ieeetran conference document class.
 Variables have two potential configuration points, which will be described here. The first point is the frontmatter variable name, which is used by the underlying system to identify the value at build time. The second point is the placeholder value, which can be replaced during the new command, or manually edited later. For the following description, variables will be named in the format `Variable Name, Placeholder Name - Description`
 
 ## MultiMarkdown Frontmatter
+
 1. `latex author`,`$AUTHOR` - name of the paper author
 2. `latex title`, `$TITLE` - title of the document
 3. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
-4. `my packages` - if defined, inserts the given file contents in the document preamble, allowing for customizing the set of packages in use.
-5. `my columns` - defines the number of columns for the document to use, defaulting to `onecolumn` if undefined.
-6. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
-7. `my keywords` - keywords for this document
-8. `myassociation`,`$ASSOCIATION` - if included, association of the paper author
-9. `my abstract` - `$ABSTRACT` - location of the abstract file
-10. `myacknowledgments` - `$MYACKNOWLEDGMENTS` - if included, the location of the acknowledgments file
+5. `my abstract` - `$ABSTRACT` - location of the abstract file
+6. `my acknowledgments` - `$ACKNOWLEDGMENTS` - if included, the location of the acknowledgments file
+6. `my packages` - `$PACKAGES` - if included, injects the contents of this file into the document before the document begins, allowing additional packages or LaTeX options to be defined.
 
 ## LaTeX Variables
 
-These variables are generally not exposed by MMD frontmatter, since the variables use special LaTeX commands which are sanitized by MMD. In order to control these, it is generally easiest to create a LaTeX file (conventionally, `metadata.tex`) and include the file by inserting the following line into the frontmatter:
-```
-latex input: metadata.tex
-```
+These variables are not included in the frontmatter by default, since they aren't always in use. Some of these variables require being defined in a LaTeX file (e.g. the packages file) due to requiring LaTeX commands.
 
-1. `myabstract` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
-2. `margin` - if defined, sets the margin argument for the [geometry package](http://www.ctan.org/tex-archive/macros/latex/contrib/geometry)
+1. `my columns` - defines the number of columns for the document to use, defaulting to `onecolumn` if undefined.
+2. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
+3. `my association` - if included, association of the paper author(s). This will require being defined in a LaTeX file.
+3. `my keywords` - keywords for this document
+4. `my top margin`, `my bottom margin` - if set, sets the margin for the given side of the page. If only one is set, the value is used for both.
+5. `my inner margin`, `my outer margin` - if set, sets the margin for the left/right side of the page. If only one is set, the value is used for both.
