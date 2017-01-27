@@ -23,3 +23,5 @@ These variables are not included in the frontmatter by default, since they aren'
 2. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
 3. `my association` - if included, association of the paper author(s). This will require being defined in a LaTeX file.
 3. `my keywords` - keywords for this document
+4. `my top margin`, `my bottom margin` - if set, sets the margin for the given side of the page. If only one is set, the value is used for both.
+5. `my inner margin`, `my outer margin` - if set, sets the margin for the left/right side of the page. If only one is set, the value is used for both.
