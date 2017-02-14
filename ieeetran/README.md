@@ -21,7 +21,10 @@ These variables are not included in the frontmatter by default, since they aren'
 
 1. `my columns` - defines the number of columns for the document to use, defaulting to `onecolumn` if undefined.
 2. `my doc class` - defines the document style to use, either `conference` (default) or `journal`.
-3. `my association` - if included, association of the paper author(s). This will require being defined in a LaTeX file.
-3. `my keywords` - keywords for this document
-4. `my top margin`, `my bottom margin` - if set, sets the margin for the given side of the page. If only one is set, the value is used for both.
-5. `my inner margin`, `my outer margin` - if set, sets the margin for the left/right side of the page. If only one is set, the value is used for both.
+3. `my size` - defines the size of text to use. For example, IEEE Transactions paper use `9pt`, while most papers use `10pt` (default).
+4. `my association` - if included, association of the paper author(s). This will require being defined in a LaTeX file.
+5. `my keywords` - keywords for this document
+6. `my appendix` - if included, appendix(ces) for the document. This will require being defined in a LaTeX file.
+7. `my biography` - if included, biography(ies) for the document. This will require being defined in a LaTeX file.
+8. `my top margin`, `my bottom margin` - if set, sets the margin for the given side of the page. If only one is set, the value is used for both.
+9. `my inner margin`, `my outer margin` - if set, sets the margin for the left/right side of the page. If only one is set, the value is used for both.
