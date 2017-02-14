@@ -7,6 +7,10 @@
 \def\mycolumns{onecolumn}
 \fi
 
+\ifx\mysize\undefined
+\def\mysize{10pt}
+\fi
+
 \ifdefined\myinnermargin
 \newcommand{\CLASSINPUTinnersidemargin}{\myinnermargin}
 \fi
@@ -20,7 +24,7 @@
 \newcommand{\CLASSINPUTbottomtextmargin}{\mybottommargin}
 \fi
 
-\documentclass[10pt,\mydocclass,\mycolumns]{IEEEtran}
+\documentclass[\mysize,\mydocclass,\mycolumns]{IEEEtran}
 \IEEEoverridecommandlockouts
 
 \usepackage{graphics}
