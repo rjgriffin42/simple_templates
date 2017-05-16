@@ -1,0 +1,47 @@
+\part{ieeetran Template}
+\label{ieeetrantemplate}
+
+Template using the ieeetran conference document class.
+
+\part{Template Variables}
+\label{templatevariables}
+
+Variables have two potential configuration points, which will be described here. The first point is the frontmatter variable name, which is used by the underlying system to identify the value at build time. The second point is the placeholder value, which can be replaced during the new command, or manually edited later. For the following description, variables will be named in the format \texttt{Variable Name, Placeholder Name - Description}
+
+\chapter{MultiMarkdown Frontmatter}
+\label{multimarkdownfrontmatter}
+
+\begin{enumerate}
+\item \texttt{latex author},\texttt{\$AUTHOR} - name of the paper author
+
+\item \texttt{latex title}, \texttt{\$TITLE} - title of the document
+
+\item \texttt{bibtex}, \texttt{\$BIBTEX} - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
+
+\item \texttt{my abstract} - \texttt{\$ABSTRACT} - location of the abstract file
+
+\item \texttt{my acknowledgments} - \texttt{\$ACKNOWLEDGMENTS} - if included, the location of the acknowledgments file
+
+\item \texttt{my packages} - \texttt{\$PACKAGES} - if included, injects the contents of this file into the document before the document begins, allowing additional packages or LaTeX options to be defined.
+
+\end{enumerate}
+
+\chapter{LaTeX Variables}
+\label{latexvariables}
+
+These variables are not included in the frontmatter by default, since they aren't always in use. Some of these variables require being defined in a LaTeX file (e.g. the packages file) due to requiring LaTeX commands.
+
+\begin{enumerate}
+\item \texttt{my columns} - defines the number of columns for the document to use, defaulting to \texttt{onecolumn} if undefined.
+
+\item \texttt{my doc class} - defines the document style to use, either \texttt{conference} (default) or \texttt{journal}.
+
+\item \texttt{my association} - if included, association of the paper author(s). This will require being defined in a LaTeX file.
+
+\item \texttt{my keywords} - keywords for this document
+
+\item \texttt{my top margin}, \texttt{my bottom margin} - if set, sets the margin for the given side of the page. If only one is set, the value is used for both.
+
+\item \texttt{my inner margin}, \texttt{my outer margin} - if set, sets the margin for the left\slash right side of the page. If only one is set, the value is used for both.
+
+\end{enumerate}
