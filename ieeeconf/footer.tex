@@ -1,15 +1,9 @@
 % Bibliography
 
-\ifx\bibliocommand\undefined
-\else
-\printbibliography
-\fi
-
-\appendices
-
 \ifx\myappendix\undefined
 \else
 
+\section*{APPENDIX}
 \input{\myappendix}
 
 \fi
@@ -18,14 +12,13 @@
 \ifx\myacknowledgments\undefined
 \else
 
-\section*{Acknowledgment}
+\section*{ACKNOWLEDGMENT}
 \input{\myacknowledgments}
 
 \fi
 
-\ifx\mybiography\undefined
+
+\ifx\bibliocommand\undefined
 \else
-
-\input{\mybiography}
-
+\printbibliography
 \fi

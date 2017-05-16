@@ -1,6 +1,6 @@
-# ieeetran Template
+# ieeeconf Template
 
-Template using the ieeetran conference document class.
+Template using the ieeeconf conference document class.
 
 # Template Variables
 
